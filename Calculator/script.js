@@ -153,9 +153,10 @@ function calculate(value) {
                 result = Math.pow(result, secondNumber);
             }
 
-            display.textContent += " = " + result;
+            display.textContent = result;
+            currentNumber = result;
 
-            currentNumber = result.toString();
+            
 
             result = null;
             operator = null;
